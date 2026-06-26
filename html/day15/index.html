@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zindex and overflow</title>
+    <style>
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            z-index: 10;
+        }
+         .box2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(0, 255, 89);
+            position: absolute;
+            z-index: 20;
+            overflow-y: scroll;
+        }
+         .box3{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat aliquam corrupti et voluptate, ea explicabo iure deleniti magnam repellat praesentium porro omnis, cumque iusto ipsa. Ut doloremque quam deserunt veritatis. Amet, debitis reprehenderit. Itaque iusto neque provident dolorum modi obcaecati vel culpa cumque mollitia! Numquam error accusantium aspernatur distinctio? Facere, beatae aspernatur sunt vero fugit animi molestias hic doloribus fugiat asperiores. Vel deserunt nesciunt ipsum pariatur molestiae voluptate temporibus perferendis reprehenderit hic cumque tenetur culpa soluta cum fugiat aperiam dignissimos perspiciatis veritatis blanditiis reiciendis, harum veniam quis exercitationem iusto? Sed, deleniti. Quidem facilis, modi distinctio molestiae illo iure qui enim vel deserunt sit nostrum. Dolor, magni. Veritatis voluptatem consequatur et in reprehenderit consectetur magnam nihil unde, dignissimos placeat velit? Corporis iusto in nam dolore dolorem recusandae cupiditate explicabo voluptas, commodi officiis aspernatur voluptates veniam animi. Totam, nobis laborum voluptates doloribus, provident nesciunt porro dolores quidem sapiente illum non assumenda quam cum eaque, molestiae omnis nihil. Eligendi odit sequi, odio totam quo a quas quaerat doloremque cumque harum sit molestias voluptas ad aliquid nesciunt amet laboriosam ab? Ex enim consequatur possimus unde illo mollitia soluta hic deleniti, minus provident error cum sapiente fugit. Sit harum accusamus, magnam dolorum deleniti libero similique!
+    </div>
+    <div class="box3">box3</div>
+
+</body>
+</html>

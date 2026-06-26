@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    margin:0;
+}
+html{
+    font-size: 10px;
+}
+
+.box1{
+    background-color:rgb(75, 75, 224);
+    width: 50rem;
+    /* height: 10rem; */
+    font-size: 2rem;
+    font-family: monospace;
+    font-style: oblique;
+    font-weight: 100;
+    line-height: 4rem;
+    word-spacing: 2rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}

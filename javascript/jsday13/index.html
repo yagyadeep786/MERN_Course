@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Js day 13
+</body>
+
+<script>
+    console.log("js day 13");
+    // Object in Javascript
+
+    // create
+    let person= {
+        name:"yagya",
+        id:2,
+        age:21,
+        address:"Tikamgarh"
+    }
+
+    console.log(typeof person);
+    console.log(person.name);
+    console.log(person.address);
+    console.log(person.ab);
+    console.log(person["id"]);
+
+
+    person.mobile="1234567890";
+
+    console.log(person);
+
+    person.name= "yagyadeep";
+
+    console.log(person);
+
+    // for in
+
+    for(let key in person){
+        console.log(key, " ---> ", person[key]);
+    }
+
+    let {age,name}= person;
+    console.log(age);
+
+
+    let copy= {...person};
+
+    let copy1= person;
+
+    copy1.gender= "male";
+    console.log(copy1);
+    console.log(person);
+
+</script>
+</html>

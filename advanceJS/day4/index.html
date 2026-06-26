@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>advance js day 4 setTimeout and setTnterval</h1>
+    <h1 id="clock"></h1>
+</body>
+<script>
+
+    // 
+    console.log("test");
+    function geet(){
+        console.log("hello yagyadeep");
+    }
+    setTimeout(geet,5000);
+
+    // for(var i=1;i<=3;i++){
+    //     setTimeout(()=>{
+    //         console.log(i);
+    //     },1000);
+    // }
+
+    //  for(let i=1;i<=3;i++){
+    //     setTimeout(()=>{
+    //         console.log(i);
+    //     },1000);
+    // }
+
+
+
+    function updateTime(){
+    let date= new Date();
+    let hours= date.getHours();
+    hours= hours% 12;
+    let min= date.getMinutes();
+    let sec= date.getSeconds();
+
+    let time= `${hours}: ${min}: ${sec}`;
+
+    document.getElementById("clock").innerHTML= time;
+    }
+
+    setInterval(updateTime,1000);
+</script>
+</html>

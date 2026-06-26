@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Js jay8
+</body>
+   <script>
+    // traffic
+
+    // let input= "red";
+
+    // if(input == "red"){
+    //     console.log("stop");
+    // }
+    // if(input == "yellow"){
+    //     console.log("slow");
+    // }
+    // if(input == "green"){
+    //     console.log("go");
+    // }
+
+    // if else - ladder
+
+    // let input= "green";
+
+    // if(input == "red"){
+    //     console.log("stop");
+    // }
+    // else if(input == "green"){
+    //     console.log("go");
+    // }
+    // else if(input == "yellow"){
+    //     console.log("slow");
+    // }
+    // else{
+    //     console.log("invalid");
+    // }
+    
+    // let input= "red";
+
+    // switch(input){
+    //     case "red":
+    //         console.log("stop");
+    //         break;
+    //     case "green":
+    //         console.log("go");
+    //         break;
+    //     case "yellow":
+    //         console.log("slow");
+    //         break;
+    //     default:
+    //         console.log("invalid");
+    // }
+    // console.log("next line");
+
+
+    /// Metro system calculator
+
+    let distance= 5;
+    let timeSift= "Night";
+    let passengerType= "Adult";
+    let amount;
+    // base price
+
+    if(distance >=1 && distance <= 5){
+        amount= distance*10; 
+    }
+    else if(distance >= 6 && distance <= 15){
+        amount= distance*20;
+    }
+    else if(distance >= 16 && distance <= 30){
+        amount= distance*30;
+    }
+    else if(distance >= 30){
+        amount= distance*50;
+    }else{
+        console.log("Invalid Distance");
+    }
+    
+
+    // passenger Type Discount
+let discount=0;
+    switch(passengerType){
+        case "Student":
+            discount= amount*(50/100);
+            amount= amount-discount;
+            break;
+        case "Senior":
+            discount= amount*(30/100);
+            amount= amount-discount;
+            break;
+         case "Adult":
+           break;
+        default:
+            console.log("Invalid Passenger Type");          
+    }
+
+
+    // TimeShipt based Discount
+    let oldAmount= amount;
+let discount2;    
+    switch(timeSift){
+        case "Morning":
+            discount2= amount*(20/100);
+            amount= amount+discount2;
+            break;
+        case "Night":
+            discount2= amount*(10/100);
+            amount= amount-discount2;
+            break;
+        case "Evening":
+            discount2= amount*(20/100);
+            amount= amount+discount2;
+            break;
+        default:
+            console.log("Invalid Time Slot");          
+    }
+
+    console.log("---------- Ticket ----------")
+    console.log("Distance: ", distance) ;
+    console.log("Passenger Type: ", passengerType);
+    console.log("Time Slot: ", timeSift);
+    console.log("-----------------------------");
+    console.log("Passenger Type Discount", discount);
+    if(oldAmount > amount){
+        console.log("Time slot discount: -",discount2);
+    }else{
+        console.log("Time slot discount: +",discount2);
+    }
+    console.log("------------------------------------");
+    console.log("Totle: ", amount);
+   </script>
+</html>

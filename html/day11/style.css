@@ -1,0 +1,10 @@
+
+.child{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    transform-style: preserve-3d;
+    transform:perspective(300px) rotate3d(1,100,1,10deg);
+}
+

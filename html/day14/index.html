@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo class ro psuedo element</title>
+    <style>
+        .box2 p{
+            color:blue;
+        }
+        .box2 p:hover{
+            color: orange;
+        }
+        .box2 h2{
+            font-weight: 900;
+        }
+        .box2 h2:active{
+            color:blueviolet;
+        }
+        .box2 a:visited{
+            color:pink;
+        }
+        .con:nth-child(4){  
+            color:blue; 
+        }
+
+        /* .box2 h2::after{
+            content:"";
+            position:absolute;
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 50px;
+            background-color: green;
+        } */
+        .box::selection{
+            color: rgb(160, 212, 160);
+            background-color: green;
+        }
+        .box2 input::placeholder{
+            color:green;
+        }
+        .box::first-letter{
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="con">
+        <div class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias repellendus illum nemo dolorem error quasi totam laudantium, unde velit sequi.
+        </div>
+        <div class="box box2">
+            <p>Hello</p>
+            <h2>Yagya</h2>
+            <input type="text" name="" id="" placeholder="Enter your name">
+        </div>
+        <div class="box box3">
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+</body>
+</html>

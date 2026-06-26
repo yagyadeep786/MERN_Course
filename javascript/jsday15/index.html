@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js day 15</title>
+</head>
+<body>
+    <h1 id="heading">
+        <p>js day 15</p>
+    </h1>
+
+    <h2 class="heading2">one</h2>
+    <h2 class="heading2">two</h2>
+    <h2 class="heading2">three</h2>
+    <h2 class="heading2">four</h2>
+    <h2 class="heading2">five</h2>
+
+    <a href="http://google.com">Google</a>
+</body>
+<script>
+    console.log("js day 15");
+    let ele= document.getElementById("heading");
+    // ele.innerHTML= "<h2> hello i am h2 </h2>";
+    // ele.textContent= "this is normal text";
+    ele.style.color= "red";
+
+
+    let elements= document.getElementsByClassName("heading2");
+
+    for(let i=0;i<elements.length;i++){
+        console.log(elements[i].textContent);
+    }
+
+    let tagele= document.querySelector("a");
+    tagele.href= "./hello";
+    console.log(tagele.href);
+    console.log(elements);
+</script>
+</html>

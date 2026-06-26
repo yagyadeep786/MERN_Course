@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Form</h2>
+    <form action="./tahnk.html" method="get">
+        <label for="first">FirstName</label>
+        <input type="text" placeholder="Enter your name" autocomplete="on" name="firstname" id="first"><br><br>
+        <input type="email" placeholder="Enter your email" autocomplete="on" autofocus><br><br>
+        <input type="password" placeholder="Enter your password"><br><br>
+
+        <input type="checkbox" checked>
+        <input type="search" placeholder="search" list="list1">
+        <datalist id="list1">
+            <option value="Box"></option>
+            <option value="headings"></option>
+        </datalist>
+        <br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender">male
+        <br><br>
+        <input type="radio" name="gender">female
+        <br><br>
+        <input type="radio" name="gender">other
+        <br><br>
+
+        
+        <select name="education">
+            
+            <option value="10th" disabled selected>10th</option>
+            <option value="12th">12th</option>
+            <option value="gradulation">graduate</option>
+        </select>
+        <br><br>
+
+        <textarea name="peragraph" id="peragraph" rows="10" cols="50"></textarea>
+
+        <button type="submit">Submit Button</button>
+        <button type="reset">Reset Button</button>
+        <input type="reset">
+        <input type="submit">
+
+    </form>
+</body>
+</html>

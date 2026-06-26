@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#hi{
+    background-color: aquamarine;
+    padding:20px;
+    width: 500px;
+    height: 200px;
+    border:5px solid black;
+    margin: 30px 40px;
+}
+
+.link{
+    background-color: blanchedalmond;
+}
+
+p{
+    color:blue;
+}
+
+p,h2,.link,#hi{
+    background-color: pink;
+}
+
+ol li a{
+    text-decoration: none;
+}

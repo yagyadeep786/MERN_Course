@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .con{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .box{
+            height: 300px;
+            width: 80vw;
+            background-color: blue;
+            animation-name: moveBox;
+            animation-timing-function: linear;
+            margin-top: 10px;
+            animation-timeline: view();
+            animation-range: 0% 30%;
+        }
+
+        @keyframes moveBox{
+            from{
+                opacity: 0;
+                transform:scale(0) translateX(-200rem);
+            }
+            to{
+                opacity: 1;
+                transform:scale(1) translateX(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

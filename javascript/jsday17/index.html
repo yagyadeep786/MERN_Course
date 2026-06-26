@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js day 17</h1>
+</body>
+<script>
+
+    // console.log("step1");
+
+    // function uppertask(task){
+    //     setTimeout(()=>{
+    //         console.log("asyn task");
+    //         let result= "data a gya";
+    //         task(result);
+    //     },1000);
+    // }
+
+    
+
+    // function task(inputvalue){
+    //     console.log(inputvalue);
+    // }
+
+    // uppertask(task);
+
+    // console.log("step2");
+
+
+function step1(step2){
+    setTimeout(()=>{
+        console.log("step1 task");
+        step2();
+    },2000)
+}
+
+function step2(){
+    setTimeout(()=>{
+        console.log("step2 task");
+    },1000)
+}
+
+step1(step2);
+
+</script>
+</html>
